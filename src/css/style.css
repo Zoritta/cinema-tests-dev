@@ -1,0 +1,101 @@
+/* change to your own choice of fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&family=Syne+Mono&display=swap');
+
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arima';
+  font-size: 20px;
+  margin: 20px 40px 40px;
+}
+
+header {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  max-width: 40vw;
+  float: right;
+  margin-left: 30px;
+  background-color: rgb(55, 101, 3);
+}
+
+tr:nth-child(even) {
+  background-color: #adc492;
+}
+
+tr:nth-child(odd) {
+  background-color: #d2dfc3;
+}
+
+thead tr {
+  background-color: rgb(46, 81, 6) !important;
+  color: white;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background-color: #dde0d8;
+}
+
+
+table th {
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 10px 20px;
+}
+
+img.er {
+  display: block;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+a {
+  color: rgb(15, 92, 130);
+}
+
+pre {
+  font-family: 'Spline Sans Mono';
+  color: #333;
+}
+
+pre span.key {
+  color: rgb(76, 128, 16);
+}
+
+pre span.key:not(.movies) {
+  width: 200px;
+  display: inline-block;
+}
+
+pre span.key:nth-of-type(odd) {
+  color: rgb(16, 74, 128);
+}
+
+img.poster {
+  position: absolute;
+  margin-top: -200px;
+  width: 120px;
+  border: 1px solid #000;
+  aspect-ratio: 11 / 16;
+}
+
+form>*,
+.loginInfo>* {
+  display: inline-block;
+  margin-left: 20px;
+}
