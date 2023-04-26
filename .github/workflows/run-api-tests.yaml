@@ -39,11 +39,11 @@ jobs:
       # start mysql and change default password
       # use the password from your settings.json fil in this repo
     - run: sudo service mysql start
-    - run: mysqladmin --user=root --password=root password "rootroot"
+    - run: mysqladmin --user=root --password=root password "crazycourse"
       # restart mysql
     - run: sudo service mysql restart
       # seed the db with initial dummy/test data
-    - run: npm run seed-db
+    - run: npm run seed-dbS
       # start the backend / rest-api-server 
       # (without blocking the terminal - nohup)
     - run: nohup npm run backend &
